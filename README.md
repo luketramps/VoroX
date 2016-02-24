@@ -77,7 +77,7 @@ package examples
 
 ##Basic info.
 
-Sites are collections of points, while grids are voronoi diagramms rendered from sites. Grids come as a collection of cells, representing the voronoi diagramm. Each cell is a renderable. Differently skinned grids with the same set of sites and/or different sets of sites, each with multiple grids, are possible. Rendering can be turned on and off for grids or sites individualy. Creating and dispo
+Sites are collections of points, while grids are voronoi diagramms rendered from sites. Grids come as a collection of cells, representing the voronoi diagramm. Each cell is a renderable. Differently skinned grids with the same set of sites and/or different sets of sites, each with multiple grids, are possible. Rendering can be turned on and off for grids or sites individualy.
 
 
 ##Skinning cells.
