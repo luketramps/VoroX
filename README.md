@@ -5,7 +5,7 @@
 Vorox is an extensible implementation of proceduraly generated (animated) voronoi diagramms in Actionscript 3 using Stage3D rendering. Vorox enables to animate and 'skin' cells inside voronoi grids at runtime. Vorox also provides further functionality for games and applications, like hittesting cells and stuff. 
 
 
-##(Super) Quick guide
+##Quick Start
 
 To get a quick start with VoroX download the zip to use the following example. Simply call <code>new SimpleApp(stage).start ()</code> in your document class.
 
