@@ -77,7 +77,7 @@ package examples
 
 ##Basic info.
 
-Differently skinned grids with the same set of sites and/or different sets of sites, each with multiple grids, are possible. Rendering can be turned on and off for grids or sites individualy. 
+Sites are collections of points, while grids are voronoi diagramms rendered from sites. Grids come as a collection of cells, representing the voronoi diagramm. Each cell is a renderable. Differently skinned grids with the same set of sites and/or different sets of sites, each with multiple grids, are possible. Rendering can be turned on and off for grids or sites individualy. Creating and dispo
 
 
 ##Skinning cells.
@@ -87,7 +87,7 @@ Each cell of a grid can have a skin attached. Different skin types offer differe
 
 ##How it works.
 
-Vorox's render loop is realised via Ash (entity component framework) while graphics are rendered by Genome2D. At core of Vorox, nodename's Delauney code creates voronoi diagrams, which are translated to renderable Genome2D components by vorox on a per frame/tick basis. Dependenciy injection is handled by swiftsuspenders.
+Vorox's render loop is realised via Ash (entity component framework) while graphics are rendered by Genome2D. At core of Vorox, nodename's Delauney code creates voronoi diagrams, which are translated to renderable Genome2D components by vorox on a per frame/tick basis. Dependency injection is handled by swiftsuspenders.
 
 
 If you have any questions, drop a mail or visit luketramps.com. Don't forget to let me know about bugs, if you find any.
@@ -96,10 +96,10 @@ If you have any questions, drop a mail or visit luketramps.com. Don't forget to 
 ##Third party dependencies. 
 
 - Genome2D, by (c) Peter Stefcek (MIT License)
-- Delauney, by (c) Alan Shaw 
-- Ash - by (c) Richard lord
-- Swiftsuspenders, by (c) Till Schneidereit
-- Actuate, by  (c)Joshua Granick
+- Delauney, by (c) Alan Shaw (MIT License)
+- Ash - by (c) Richard lord (MIT License)
+- Swiftsuspenders, by (c) Till Schneidereit (MIT License)
+- Actuate, by (c) Joshua Granick (MIT License)
 
 
 Zip download comes with all dependencies and examples.
