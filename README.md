@@ -1,6 +1,6 @@
 #VoroX (alpha)
 
-##Vornoi Animation Framework
+##Voronoi Animation Framework
 
 Vorox is an extensible implementation of proceduraly generated (animated) voronoi diagramms in Actionscript 3 using Stage3D rendering. Vorox enables to animate and 'skin' cells inside voronoi grids at runtime. Vorox also provides further functionality for games and applications, like hittesting cells and stuff. 
 
