@@ -1,7 +1,7 @@
 # VoroX
 Voronoi Animation Framework
 
-'''actionscript3
+'''javascript
 if (hello=="world")
   trace ("bla");
 '''
