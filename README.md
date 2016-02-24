@@ -19,7 +19,7 @@ package examples
 	import com.luketramps.vorox.Vorox;
 	import flash.display.Stage;
 	
-	/* ApplicationVX is a shortcut to get vorox running */
+	/* Extending ApplicationVX is a quick way to start Vorox */
 	public class SimpleApp extends ApplicationVX
 	{
 		/* Assets for skinning */
