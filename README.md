@@ -2,7 +2,7 @@
 
 ##Voronoi Animation Framework
 
-Vorox is an extensible implementation of continuously generated (animatable) voronoi diagramms in Actionscript 3 using Stage3D rendering. Vorox enables to move and 'skin' cells inside voronoi grids at runtime. Vorox also provides further functionality for games and applications, like hittesting cells and stuff. 
+Vorox is an extensible implementation of continuously generated (animatable) voronoi diagramms in Actionscript 3 using Stage3D for display rendering. Vorox enables to move and 'skin' cells inside voronoi grids at runtime. Vorox also provides further functionality for games and applications, like hittesting cells and stuff. 
 
 
 ##Quick Start
@@ -77,17 +77,17 @@ package examples
 
 ##Basic info.
 
-Sites are collections of points, while grids are voronoi diagramms rendered from sites. Grids come as a collection of cells, representing the voronoi diagramm. Each cell is a renderable. Differently skinned grids with the same set of sites and/or different sets of sites, each with multiple grids, are possible. Rendering can be turned on and off for grids or sites individualy. However, grids, sites and cells are entities in an entity component system. It would be best to know the basics of entity component systems, to get started with VoroX.
+Sites are collections of points, while grids are voronoi diagramms rendered from sites. Grids come as a collection of cells, representing the voronoi diagramm. Each cell is represented in the display list. Differently skinned grids with the same set of sites and/or different sets of sites, each with multiple grids, are possible. Rendering can be turned on and off for grids or sites individualy. However, grids, sites and cells are entities in an entity component system. It would be best to know the basics of entity component systems, to get started with Vorox. Add and dispose sites and grids, use the Vorox api.
 
 
 ##Skinning cells.
 
-Each cell of a grid can have a skin attached. Different skin types offer different behavior: A SimpleSkin applies a single texture on the cell, while SpriteSkin is for sprite animations and MaskedSkin is a renderable, that uses the cell polygon as mask. To add, apply, remove and dispose skins, use the vorox api. 
+Each cell of a grid can have a skin attached. Different skin types offer different behavior: A SimpleSkin applies a single texture on the cell, while SpriteSkin is for sprite animations and MaskedSkin is a renderable, that is masked by the cell polygon. To add, apply, remove and dispose skins, use the Vorox api. 
 
 
 ##How it works.
 
-Vorox's render loop is realised via Ash (entity component framework) while graphics are rendered by Genome2D. At core of Vorox, nodename's Delauney code creates voronoi diagrams, which are translated to renderable Genome2D components by vorox on a per frame/tick basis. Dependency injection is handled by swiftsuspenders.
+Vorox's render loop is realised via Ash (entity component framework) while graphics are rendered by Genome2D. At core of Vorox, nodename's Delauney code creates voronoi diagrams, which are translated to renderable Genome2D components by Vorox on a per frame/tick basis. Dependency injection is handled by swiftsuspenders.
 
 
 If you have any questions, drop a mail or visit luketramps.com. Don't forget to let me know about bugs, if you find any.
