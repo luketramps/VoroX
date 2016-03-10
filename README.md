@@ -4,6 +4,11 @@
 
 Vorox is an extensible implementation of continuously generated (animatable) voronoi diagramms in Actionscript 3 using Stage3D for display rendering. Vorox enables to move and 'skin' cells inside voronoi grids at runtime. Vorox also provides further functionality for games and applications, like hittesting cells and stuff. 
 
+##Official Manual
+
+If you want a more detailed manual on how to use VoroX, you'll find it [here](http://www.luketramps.com/lt/index.php/vorox/vorox-manual).
+
+To see VoroX in action, follow this [link](http://www.luketramps.com/lt/index.php/vorox) (requires Flash Player).
 
 ##Quick Start
 
@@ -23,7 +28,7 @@ package examples
 	public class SimpleApp extends ApplicationVX
 	{
 		/* Assets for skinning */
-		[Embed(source="../../my/skin.png")]
+		[Embed(source="../my/skin.png")]
 		public var MyBitmap:Class;
 		
 		/* Sample animation */
@@ -45,8 +50,6 @@ package examples
 		/* Post init code */
 		protected override function startUp():void
 		{
-			var vorox:Vorox = super.vx;
-			
 			/* Create some sites */
 			vorox.createRandomSites ("mySites", 30, stage.stageWidth, stage.stageHeight);
 			
