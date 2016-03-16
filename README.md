@@ -15,7 +15,7 @@ To see VoroX in action, follow this [link](http://www.luketramps.com/lt/index.ph
 To get a quick start with VoroX download the zip to use the following example. Link all the swc libraries to your project and call <code>new SimpleApp(stage).start ()</code> in your document class.
 
 ```actionscript3
-package examples 
+package  
 {
 	import com.luketramps.vorox.animations.Swap;
 	import com.luketramps.vorox.ApplicationVX;
