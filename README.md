@@ -15,65 +15,66 @@ To see VoroX in action, follow this [link](http://www.luketramps.com/lt/index.ph
 To get a quick start with VoroX download the zip to use the following example. Link all the swc libraries to your project and call <code>new SimpleApp(stage).start ()</code> in your document class.
 
 ```actionscript3
-package  
+package examples.official
 {
-	import com.luketramps.vorox.animations.Swap;
-	import com.luketramps.vorox.ApplicationVX;
-	import com.luketramps.vorox.data.PointVX;
-	import com.luketramps.vorox.skins.simple.SimpleSkin;
-	import com.luketramps.vorox.Vorox;
-	import flash.display.Stage;
-	
-	/* Extending ApplicationVX is a quick way to start Vorox */
-	public class SimpleApp extends ApplicationVX
-	{
-		/* Assets for skinning */
-		[Embed(source="../my/skin.png")]
-		public var MyBitmap:Class;
-		
-		/* Sample animation */
-		private var swap:Swap;
-		
-		public function SimpleApp(stage:Stage) 
-		{
-			stage.frameRate = 60;
-			
-			/* Init vorox */
-			super (stage);
-		}
-		
-		/* Pre init code */
-		override protected function setUp():void 
-		{
-		}
-		
-		/* Post init code */
-		protected override function startUp():void
-		{
-			/* Create some sites */
-			vorox.createRandomSites ("mySites", 30, stage.stageWidth, stage.stageHeight);
-			
-			/* Create a grid from the sites */
-			vorox.createGrid ("myGrid", "mySites", 8);
-			
-			/* Create a skin */
-			vorox.addSkin (SimpleSkin.createFrom ("mySimpleSkin", MyBitmap));
-			
-			/* Apply the skin to all cells of the grid */
-			vorox.applySkinOnGrid ("mySimpleSkin", "myGrid");	
+    import com.luketramps.vorox.animations.Swap;
+    import com.luketramps.vorox.ApplicationVX;
+    import com.luketramps.vorox.data.PointVX;
+    import com.luketramps.vorox.skins.simple.SimpleSkin;
+    import com.luketramps.vorox.Vorox;
+    import flash.display.Stage;
 
-			/* Animate sites on click */
-			super.onTouch.add (
-			function(p:PointVX):void
-			{
-				if (swap == null)
-					swap = new Swap ("mySites", 3);
-					
-				/* Animate sites */
-				swap.animate ();
-			});
-		}	
-	}
+    /* Extending ApplicationVX is a quick way to start Vorox */
+    public class GitExample extends ApplicationVX
+    {
+        /* Assets for skinning */
+        //[Embed(source="../../my/skin.png")]
+		[Embed(source="../../../bin/texture/skin.png")]
+        public var MyBitmap:Class;
+
+        /* Sample animation */
+        private var swap:Swap;
+
+        public function GitExample(stage:Stage) 
+        {
+            stage.frameRate = 60;
+
+            /* Init vorox */
+            super (stage);
+        }
+
+        /* Pre init code */
+        override protected function setUp():void 
+        {
+        }
+
+        /* Post init code */
+        protected override function startUp():void
+        {
+            /* Create a chart */
+            vorox.createRandomChart ("myChart", 30, stage.stageWidth, stage.stageHeight);
+
+            /* Create a grid from the chart */
+            vorox.createGrid ("myGrid", "myChart", 8);
+
+            /* Create a skin */
+            vorox.addSkin (SimpleSkin.createFrom ("mySimpleSkin", MyBitmap));
+
+            /* Apply the skin to all cells of the grid */
+            vorox.applySkinOnGrid ("mySimpleSkin", "myGrid");   
+
+            /* Animate sites on click */
+            super.onTouch.add (
+            function(p:PointVX):void
+            {
+                if (swap == null)
+                    swap = new Swap ("myChart", 3);
+	
+                /* Animate sites */
+                swap.animate ();
+            });
+        }   
+    }
 }
 ```
 
