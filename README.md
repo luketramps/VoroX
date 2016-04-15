@@ -6,9 +6,9 @@ Vorox is an extensible implementation of continuously generated (animatable) vor
 
 ##Official Manual
 
-If you want a more detailed manual on how to use VoroX, you'll find it [here](http://www.luketramps.com/lt/index.php/vorox/vorox-manual).
+If you want a more detailed manual on how to use VoroX, you'll find it here
 
-To see VoroX in action, follow this [link](http://www.luketramps.com/lt/index.php/vorox) (requires Flash Player).
+[VoroX Manual](http://www.luketramps.com/lt/index.php/vorox/vorox-manual).
 
 ##Quick Start
 
@@ -28,8 +28,7 @@ package examples.official
     public class GitExample extends ApplicationVX
     {
         /* Assets for skinning */
-        //[Embed(source="../../my/skin.png")]
-		[Embed(source="../../../bin/texture/skin.png")]
+        [Embed(source="../../my/skin.png")]
         public var MyBitmap:Class;
 
         /* Sample animation */
@@ -81,7 +80,7 @@ package examples.official
 
 ##Basic info.
 
-Sites are collections of points, while grids are voronoi diagramms rendered from sites. Grids come as a collection of cells, representing the voronoi diagramm. Each cell is represented in the display list. Differently skinned grids with the same set of sites and/or different sets of sites, each with multiple grids, are possible. Rendering can be turned on and off for grids or sites individualy. However, grids, sites and cells are entities in an entity component system. It would be best to know the basics of entity component systems, to get started with Vorox. Add and dispose sites and grids, use the Vorox api.
+A Chart object is mostly a collection of points (sites), that define a Voronoi diagramm. Grids come as a collection of cells, representing the voronoi diagramm. A cell displays a region in the voronoi chart, that is constantly beeing updated (rendered to display) via Genome2D framework. Rendering can be turned on and off for grids or charts individualy. However, grids, sites and cells are entities in an entity component system. It would be best to know the basics of entity component systems, to get started with Vorox. Add and dispose charts and grids, use the Vorox api.
 
 
 ##Skinning cells.
