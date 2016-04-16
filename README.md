@@ -12,7 +12,7 @@ If you want a more detailed manual on how to use VoroX, you'll find it here
 
 ##Quick Start
 
-To get a quick start with VoroX download the zip to use the following example. Link all the swc libraries to your project and call <code>new SimpleApp(stage).start ()</code> in your document class.
+To get a quick start with VoroX download the zip to use the following example. Link all the swc libraries to your project and call <code>new GitExample(stage).start ()</code> in your document class.
 
 ```actionscript3
 package examples.official
