@@ -1,0 +1,12 @@
+[submodule "as3delaunayVX"]
+	path = as3delaunayVX
+	url = https://github.com/luketramps/as3delaunayVX
+[submodule "SwiftSuspenders"]
+	path = SwiftSuspenders
+	url = https://github.com/tschneidereit/SwiftSuspenders
+[submodule "actuate"]
+	path = actuate
+	url = https://github.com/thecocce/actuate
+[submodule "Ash"]
+	path = Ash
+	url = https://github.com/richardlord/Ash
