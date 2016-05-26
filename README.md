@@ -80,7 +80,7 @@ package examples.official
 
 ##Basic info.
 
-A Chart object is mostly a collection of points (sites), that define a Voronoi diagramm. Grids come as a collection of cells, representing the voronoi diagramm. A cell displays a region in the voronoi chart, that is constantly beeing updated (rendered to display) via Genome2D framework. Rendering can be turned on and off for grids or charts individualy. However, grids, sites and cells are entities in an entity component system. It would be best to know the basics of entity component systems, to get started with Vorox. Add and dispose charts and grids, use the Vorox api.
+A Chart object is mostly a collection of points (sites), that define a Voronoi diagramm. Grids come as a collection of cells, representing the voronoi diagramm. A cell displays a region in the voronoi chart, that is constantly beeing updated (rendered to display) via Genome2D framework. Rendering can be turned on and off for grids or charts individualy. However, charts, grids and cells are entities in an entity component system. It would be best to know the basics of entity component systems, to get started with Vorox. Add and dispose charts and grids, use the Vorox api.
 
 
 ##Skinning cells.
